@@ -20,7 +20,7 @@ jobs:
       fail-fast: true
       matrix:
         molecule_distro:
-          - { "distro":"centos-7", "command":"/usr/sbin/init" }
+          #- { "distro":"centos-7", "command":"/usr/sbin/init" }
           - { "distro":"centos-8", "command":"/usr/sbin/init" }
           - { "distro":"fedora-32", "command":"/usr/sbin/init" }
           - { "distro":"fedora-31", "command":"/usr/sbin/init" }

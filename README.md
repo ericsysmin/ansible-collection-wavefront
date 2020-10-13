@@ -1,4 +1,4 @@
-# Ansible Collection - wavefrontHQ.ansible-collection-wavefront
+# Ansible Collection - ericsysmin.wavefront
 
 This Ansible collection comprises of roles that allows you to install and configure wavefront-proxy from your playbook.
 
@@ -10,13 +10,13 @@ ansible version 2.9.* is required.
 To install the collection:
 
 ```
-ansible-galaxy collection install wavefront.ansible_collection_wavefront
+ansible-galaxy collection install ericsysmin.wavefront
 ```
 
 To install the collection from the tarball:
 
 ```
-ansible-galaxy collection install wavefront-ansible_collection_wavefront-1.3.0.tar.gz
+ansible-galaxy collection install ericsysmin.wavefront
 ```
 
 To use the collection in your playbook and import wavefront-proxy after installation
