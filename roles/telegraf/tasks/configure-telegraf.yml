@@ -28,13 +28,14 @@
     notify: restart telegraf
 
   - name: telegraf input - netstat.sh
-    template: src="scripts/netstat.sh" dest="{{ telegraf_script_dir}}/netstat.sh" mode=0755
+    template: src="scripts/netstat.sh" dest="{{ telegraf_script_dir }}/netstat.sh" mode=0755
 
-  - pause:
+  - name: Pause for 30 seconds
+    pause:
       seconds: 30
 
   - name: telegraf input - input-exec-netstat.conf
-    template: src="input-exec-netstat.conf.j2" dest="{{ telegraf_additional_config_dir}}/input-exec-netstat.conf" mode=0644
+    template: src="input-exec-netstat.conf.j2" dest="{{ telegraf_additional_config_dir }}/input-exec-netstat.conf" mode=0644
     notify: restart telegraf
 
   tags:
