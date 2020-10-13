@@ -11,7 +11,7 @@ on:
       - 'molecule/telegraf/**'
       - '.github/workflows/telegraf.yml'
 jobs:
-  logrotate:
+  telegraf:
     runs-on: ubuntu-18.04
     env:
       PY_COLORS: 1

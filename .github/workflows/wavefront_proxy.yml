@@ -11,7 +11,7 @@ on:
       - 'molecule/wavefront_proxy/**'
       - '.github/workflows/wavefront_proxy.yml'
 jobs:
-  logrotate:
+  wavefront_proxy:
     runs-on: ubuntu-18.04
     env:
       PY_COLORS: 1
